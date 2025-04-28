@@ -1,4 +1,7 @@
 Juego de Dominó en Visual Studio 2022 con Windows Forms
+
+![image](https://github.com/user-attachments/assets/486ceb2c-e8ce-446c-a058-c04fe90dda01)
+
 Vamos a hacer una versión más completa del juego de dominó en Visual Studio 2022 usando Windows Forms:
 
 ✔️ Fichas en la mano
