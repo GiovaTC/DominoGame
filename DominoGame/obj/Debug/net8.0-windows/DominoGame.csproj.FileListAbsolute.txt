@@ -1,0 +1,17 @@
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\bin\Debug\net8.0-windows\DominoGame.exe
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\bin\Debug\net8.0-windows\DominoGame.deps.json
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\bin\Debug\net8.0-windows\DominoGame.runtimeconfig.json
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\bin\Debug\net8.0-windows\DominoGame.dll
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\bin\Debug\net8.0-windows\DominoGame.pdb
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.Form1.resources
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.csproj.GenerateResource.cache
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.AssemblyInfoInputs.cache
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.AssemblyInfo.cs
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.csproj.CoreCompileInputs.cache
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.sourcelink.json
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.dll
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\refint\DominoGame.dll
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.pdb
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\DominoGame.genruntimeconfig.cache
+C:\Users\gtapi\source\repos\DominoGame\DominoGame\obj\Debug\net8.0-windows\ref\DominoGame.dll
