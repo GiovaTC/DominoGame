@@ -46,7 +46,50 @@ namespace DominoGame
             return tiles;
         }
 
+        public bool CanPlay(DominoTile tile)
+        {
+            if (Table.Count == 0)
+            {
+                Table.Add(tile);
+                PlayerHand.Remove(tile);
+                return true;
+            }
 
+            int leftEnd = Table.First().Left;
+            int rightEnd = Table.Last().Right;
 
+            if (tile.Right == leftEnd)
+            {
+                Table.Insert(0, tile);
+            }
+            else if (tile.Left == leftEnd)
+            {
+                Table.Insert(0, tile.Flip());
+            }
+            else if (tile.Left == rightEnd)
+            {
+                Table.Add(tile);
+            }
+            else if (tile.Right == rightEnd)
+            {
+                Table.Add(tile.Flip());
+            }
+            else
+            {
+                return false;
+            }
+
+            PlayerHand.Remove(tile);
+            return true;
+        }
+
+        public DominoTile DrawTile()
+        {
+            if (Deck.Count == 0) return null;
+            var tile = Deck.First();
+            Deck.RemoveAt(0);
+            PlayerHand.Add(tile);
+            return tile;
+        }
     }
 }
