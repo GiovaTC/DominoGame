@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +48,14 @@ namespace DominoGame
 
         public bool CanPlay(DominoTile tile)
         {
+            if (Table.Count == 0) return true;
+            int leftEnd = Table.First().Left;
+            int rightEnd = Table.Last().Right;
+            return tile.Left == leftEnd || tile.Right == leftEnd || tile.Left == rightEnd || tile.Right == rightEnd;
+        }
+
+        public bool PlayTile(DominoTile tile)
+        {
             if (Table.Count == 0)
             {
                 Table.Add(tile);
@@ -93,3 +101,4 @@ namespace DominoGame
         }
     }
 }
+

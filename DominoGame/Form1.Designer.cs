@@ -1,4 +1,4 @@
-﻿namespace DominoGame
+namespace DominoGame
 {
     partial class Form1
     {

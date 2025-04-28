@@ -21,8 +21,8 @@ namespace DominoGame
         {
             this.Controls.Clear();
 
-            int x = 10;
-            int y = 10;
+            int x = 60;
+            int y = 80;
 
             // Dibujar mesa
             Label tableLabel = new Label();
@@ -30,28 +30,28 @@ namespace DominoGame
             tableLabel.Location = new Point(x, y);
             this.Controls.Add(tableLabel);
 
-            x += 50;
+            x += 130;
             foreach (var tile in game.Table)
             {
                 Label tileLabel = new Label();
                 tileLabel.Text = tile.ToString();
                 tileLabel.BorderStyle = BorderStyle.FixedSingle;
                 tileLabel.Location = new Point(x, y);
-                tileLabel.Size = new Size(40, 30);
+                tileLabel.Size = new Size(60, 30);
                 this.Controls.Add(tileLabel);
                 x += 45;
             }
 
             // Dibujar mano del jugador
-            x = 10;
-            y += 60;
+            x = 60;
+            y += 120;
 
             Label handLabel = new Label();
             handLabel.Text = "Tu mano:";
             handLabel.Location = new Point(x, y);
             this.Controls.Add(handLabel);
 
-            x += 50;
+            x += 120;
             foreach (var tile in game.PlayerHand)
             {
                 Button tileButton = new Button();
@@ -67,7 +67,7 @@ namespace DominoGame
             Button drawButton = new Button();
             drawButton.Text = "Tomar ficha";
             drawButton.Size = new Size(100, 30);
-            drawButton.Location = new Point(10, y + 50);
+            drawButton.Location = new Point(40, y + 80);
             drawButton.Click += (s, e) => DrawTile();
             this.Controls.Add(drawButton);
         }
@@ -76,7 +76,8 @@ namespace DominoGame
         {
             if (game.CanPlay(tile))
             {
-            //    game.PlayTile(tile);
+                game.PlayTile(tile);
+
             }
             else
             {
@@ -96,3 +97,4 @@ namespace DominoGame
         }
     }
 }
+
