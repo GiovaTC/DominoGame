@@ -10,13 +10,13 @@ namespace DominoGame
     {
         public List<DominoTile> Deck { get; private set; }
         public List<DominoTile> Table { get; private set; }
-        public List<DominoTile> PLayerHand { get; private set; }
+        public List<DominoTile> PlayerHand { get; private set; }
 
         public DominoGame()
         {
             Deck = GenerateDeck();
             ShuffleDeck();
-     //     PlayerHand = DrawTiles(7);
+            PlayerHand = DrawTiles(7);
             Table = new List<DominoTile>();
         }
 
@@ -35,7 +35,18 @@ namespace DominoGame
 
         private void ShuffleDeck()
         {
-            throw new NotImplementedException();
+            var rnd = new Random();
+            Deck = Deck.OrderBy(x => rnd.Next()).ToList();
         }
+
+        private List<DominoTile> DrawTiles(int count)
+        {
+            var tiles = Deck.Take(count).ToList();
+            Deck.RemoveRange(0, count);
+            return tiles;
+        }
+
+
+
     }
 }
